@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinglebells-webshop</title>
+    <link rel="shortcut icon" href="bilder/favicon16x16.ico">
+    <link rel="icon" href="bilder/favicon32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+    <div id="notify"></div>
+
+    <div class="container top-spacer">
+
+        <div id="info-banner"><p>FRI FRAKT INOM SVERIGE PÅ ALLA BESTÄLLNINGAR ÖVER 600 KRONOR</p></div>
+
+        <header>
+            <a href="index.html"><img src="bilder/logo-komp-png.png" alt="logotyp - jingle bells"></a>
+            <img src="bilder/musse/frilaggning_musse.png" alt="liten musse" id="frilaggning_musse">
+        
+            <!--Meny-knapp för att öppna dropdown meny-->
+
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon" id="menu-icon-bars">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+
+            <!--dropdown meny och stäng-knappen -->
+
+            <nav id="nav-menu">
+
+                <!--Stängaknappen som visas när mdropmenyn är -->
+
+                <button id="close-menu">
+                    <span class="menu-icon" id="menu-icon-cross">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney- Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney- Kalle Anka</a></li>
+                    <li><a href="contact.html" class="activated">Kontakt / Om mig</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney - Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney - Kalle Anka</a></li>
+                    <li><a href="contact.html" class="activated">Kontakt / Om mig</a></li>
+                    
+                 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="center">
+            <section id="about">
+                <h1>Om mig, min utbildning och webbplatsen</h1>
+                <p>Mitt namn är Anne-Lii Hansen. Jag började min webbutveklingsutbildning i augusti 2023 på Mittuniversitetet. 
+                    Programmet är 2 år långt /120hp och examen sker förhoppningsvis 2025 till sommaren. 
+                    Jag tycker att webbutveckling och programmering är superkul och tanken att jag kanske kan få jobba med detta på heltid en vacker känns overkligen!
+                    Jag är verkligen i startgroparna och inser varje dag hur mycket mer man har att lära och att jag knappt har börjat skrapa på ytan ännu.<br><br>
+                    Denna sida är skapad ur min löjliga dragning till julen och </p>
+            </section>
+
+            <section id="kontakt">
+                <h1>Kontakt</h1>
+                <p>
+                    Har du några frågor så tveka inte att höra av dig antingen via mail eller via formuläret nedan.<br><br>
+                     Mail: anha2324@student.miun.se</p>
+
+                     <form>
+                        <label for="name">Namn:<br><input type="text" id="name" placeholder="Förnamn Efternamn"></label><br><br>
+                        <label for="epost">E-mail adress:<br><input type="email" id="epost" placeholder="e-mail adress" ></label><br><br>
+                        <label for="mobil">Telefonnummer:<br><input  id="mobil" placeholder="Telefonnummer" ></label><br><br>
+
+                        <label for="message">Meddelande:<br> <textarea id="message" rows="10" placeholder="Skriv ditt meddelande här..."></textarea></label><br><br>
+                        <button type = "reset" name = "reset" value = "reset">Nollställ</button>
+                        <button type = "submit" name = "Skicka in" value = "Skicka in">Skicka in</button>
+                       
+
+                     </form>
+            </section>
+           
+        </div>
+
+        <div class="right">
+            <h2>Varukorg</h2>
+            <div id="basket-holder">
+                <ul id="basket">
+                    <li>Varukorgen är tom</li>
+                </ul>
+                <button onclick="emptyBasket()" class="checkout-button">Töm varukorgen</button>
+                <button onclick="location.href='checkout.html'" type="button" class="checkout-button">Till
+                    kassan</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Anne-Lii Hansen</p>
+        </footer>
+
+        <div class="clear"></div>
+
+        <script src="js/webshop.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinglebells-webshop</title>
+    <link rel="shortcut icon" href="bilder/favicon16x16.ico">
+    <link rel="icon" href="bilder/favicon32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+    <div id="notify"></div> 
+
+    <div class="container top-spacer">
+
+        <div id="info-banner"><p>FRI FRAKT INOM SVERIGE PÅ ALLA BESTÄLLNINGAR ÖVER 600 KRONOR</p></div>
+
+         <header>
+            <a href="index.html"><img src="bilder/logo-komp-png.png" alt="logotyp - jingle bells"></a>
+            <img src="bilder/musse/frilaggning_musse.png" alt="liten musse" id="frilaggning_musse">
+
+            <!--Meny-knapp för att öppna dropdown meny-->
+
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon" id="menu-icon-bars">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+
+            <!--dropdown meny och stäng-knappen -->
+
+            <nav id="nav-menu">
+
+                <!--Stängaknappen som visas när mdropmenyn är -->
+
+                <button id="close-menu">
+                    <span class="menu-icon" id="menu-icon-cross">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney - Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney - Kalle Anka</a></li>
+                    <li><a href="contact.html">Kontakt / Om mig</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney - Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney - Kalle Anka</a></li>
+                    <li><a href="contact.html">Kontakt / Om mig</a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+
+        
+        <div class="center" id="kassa">
+            <h1>Kassan</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Bild</td>
+                        <td>Artikelnr</td>
+                        <td>Varunamn</td>
+                        <td>Antal</td>
+                        <td>Pris</td>
+                    </tr>
+                </thead>
+                <tbody id="checkout"></tbody>
+            </table>
+
+            <button onclick="emptyBasket()" class="checkout-button">Töm varukorgen</button>
+
+           
+            <div>
+                <h2>Dina leveransuppgifter</h2>
+                <form>
+                    
+    
+
+                    <label for="input_name">Namn:</label><br>
+                    <input type="text" placeholder="Förnamn Efternamn" id="input_name"><br><br>
+
+                    <label for="input_adress">Adress:</label><br>
+                    <input type="text" placeholder="Adress" id="input_adress"><br><br>
+
+                    <label for="input_postnummer">Postnummer:</label><br>
+                    <input type="text" placeholder="Postnummer" id="input_postnummer"><br><br>
+
+                    <label for="input_ort">Ort:</label><br>
+                    <input type="text" placeholder="Ort" id="input_ort"><br><br>
+
+                    <label for="input_email">E-mail adress:</label><br>
+                    <input type="email" placeholder="E-mail adress" id="input_email"><br><br>
+
+                    <div class="float-right">
+                        <input type="checkbox" id="confirmField">
+                        <label class="label-inline" for="confirmField">Jag accepterar köpvillkoren</label>
+                        <br><br>
+                    </div>
+
+                   
+                </form>
+
+                <button onclick="checkoutBasket()">Slutför köp</button>
+
+            </div>
+            
+            
+        </div>
+        
+        <footer>
+            <p>&copy; Anne-Lii Hansen</p>
+        </footer>
+        
+        <div class="clear"></div>
+
+        <script src="js/webshop.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+
+
+</body>
+
+</html>

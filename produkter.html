@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinglebells-webshop</title>
+    <link rel="shortcut icon" href="bilder/favicon16x16.ico">
+    <link rel="icon" href="bilder/favicon32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <div class="container top-spacer">
+
+        <div id="info-banner"><p>FRI FRAKT INOM SVERIGE PÅ ALLA BESTÄLLNINGAR ÖVER 600 KRONOR</p></div>
+
+        <header>
+            <a href="index.html"><img src="bilder/logo-komp-png.png" alt="logotyp - jingle bells"></a>
+            <img src="bilder/musse/frilaggning_musse.png" alt="liten musse" id="frilaggning_musse">
+
+            <!--Meny-knapp för att öppna dropdown meny-->
+
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon" id="menu-icon-bars">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+
+            <!--dropdown meny och stäng-knappen -->
+
+            <nav id="nav-menu">
+
+                <!--Stängaknappen som visas när mdropmenyn är -->
+
+                <button id="close-menu">
+                    <span class="menu-icon" id="menu-icon-cross">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html" class="activated">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney - Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney - Kalle Anka</a></li>
+                    <li><a href="contact.html">Kontakt / Om mig</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida / Nyheter</a></li>
+                    <li><a href="produkter.html" class="activated">Julgransdekorationer</a></li>
+                    <li><a href="pluto.html">Disney - Pluto</a></li>
+                    <li><a href="musse.html">Disney - Musse Pigg</a></li>
+                    <li><a href="mimmi.html">Disney - Mimmi</a></li>
+                    <li><a href="langben.html">Disney - Långben</a></li>
+                    <li><a href="kalle.html">Disney - Kalle Anka</a></li>
+                    <li><a href="contact.html">Kontakt / Om mig</a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
+        <div class="center" id="center_alla_produkter">
+            
+            <h1>Julgransdekorationer</h1>
+
+            <article>
+            <picture onclick="location.href='pluto.html'">
+                <source srcset="bilder/pluto/pluto1_200_webp.webp" type="image/webp">
+                <img src="bilder/pluto/pluto1_200_jpeg.jpg" alt="Pluto julgransdekoration">
+            </picture>
+                <h2>Disney - Pluto</h2>
+                <p>120kr</p>
+                <button onclick="addToBasket(this, '001', 'Disney-Pluto', 120, 'bilder/pluto/pluto1_60_jpeg.jpg', true)">Köp</button>
+            </article>
+
+            <article>
+            <picture onclick="location.href='musse.html'">
+                <source srcset="bilder/musse/musse1_200_webp.webp" type="image/webp">
+                <img src="bilder/musse/musse1_200_jpeg.jpg" alt="Musse Pigg julgransdekoration">
+            </picture>
+                <h2>Disney - Musse</h2>
+                <p>120kr</p>
+                <button onclick="addToBasket(this, '002', 'Disney-Musse', 120, 'bilder/musse/musse1_60_jpeg.jpg', true)">Köp</button>
+            </article>
+
+            <article>
+            <picture onclick="location.href='mimmi.html'">
+                <source srcset="bilder/mimmi/mimmi1_200_webp.webp" type="image/webp">
+                <img src="bilder/mimmi/mimmi1_200_jpeg.jpg" alt="Mimmi julgransdekoration">
+            </picture>
+                <h2>Disney - Mimmi</h2>
+                <p>120kr</p>
+                <button onclick="addToBasket(this, '003', 'Disney-Mimmi', 120, 'bilder/mimmi/mimmi1_60_jpeg.jpg', true)">Köp</button>
+            </article>
+
+            <article>
+            <picture onclick="location.href='langben.html'" >
+                <source srcset="bilder/långben/långben1_200_webp.webp" type="image/webp">
+                <img src="bilder/långben/långben1_200_jpeg.jpg" alt="Långben julgransdekoration">
+            </picture>
+                <h2>Disney - Långben</h2>
+                <p>120kr</p>
+                <button onclick="addToBasket(this, '004', 'Disney-Långben', 120, 'bilder/långben/långben1_60_jpeg.jpg', true)">Köp</button>
+            </article>
+
+            <article>
+                <picture onclick="location.href='kalle.html'" >
+                    <source srcset="bilder/kalle/kalle2_200_webp.webp" type="image/webp">
+                    <img src="bilder/kalle/kalle2_200_jpeg.jpg" alt="kalle anka julgransdekoration">
+                </picture>
+                <h2>Disney - Kalle</h2>
+                <p>120kr</p>
+                <button onclick="addToBasket(this, '005', 'Disney-Kalle', 100, 'bilder/kalle/litenvarukorg/kalle1_60_jpeg.jpg', true)">Köp</button>
+            </article>
+
+        </div>
+
+        <div class="right">
+            <h2>Varukorg</h2>
+            <div id="basket-holder">
+                <ul id="basket">
+                    <li>Varukorgen är tom</li>
+                </ul>
+                <button onclick="emptyBasket()" class="checkout-button">Töm varukorgen</button><br>
+                <button onclick="location.href='checkout.html'" type="button" class="checkout-button">Till
+                    kassan</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Anne-Lii Hansen</p>
+        </footer>
+
+        <div class="clear"></div>
+
+        <script src="js/webshop.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+
+
+</body>
+
+</html>
