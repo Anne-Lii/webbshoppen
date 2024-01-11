@@ -327,7 +327,7 @@ footer {
     }
     
     #nav-menu ul li {
-        padding: 8% 2%;
+        padding: 5% 2%;
         width: 100%;
         cursor: pointer;
     }
@@ -349,12 +349,12 @@ footer {
         /*flexibel display för att öppna och stänga meny*/
         display: flex;
         align-items: center;
-        padding: 10px 10px;
+        padding: 6px;
         background-color: #7D0A0A;
         cursor: pointer;
         position: absolute;
         top: 40px;
-        right: 20px;
+        right: 5px;
     }
 
     #open-menu:hover {
