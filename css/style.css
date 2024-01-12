@@ -50,12 +50,13 @@ button {
     font-size: 24px;
     border-radius: 5px;
     box-shadow: 1px 2px 8px;
-    margin: 5px;
+    margin: 10 px;
     cursor: pointer;
+    background-color: #f3f2f2;
 }
 
 button:hover {
-    background-color: grey;
+    background-color: #808080;
 }
 
 .container {
@@ -68,7 +69,7 @@ button:hover {
     grid-column: 1/4;
     grid-row: 1/2;
     height: 30px;
-    background-color: rgb(253, 253, 0);
+    background-color: #fdfd00;
 }
 
 
@@ -89,6 +90,7 @@ header {
 #frilaggning_musse {
     position: relative;
     top: 10px;
+    max-width: 20%;
 }
 
 /*navigeringsmeny till vänster stor skärm*/
@@ -260,7 +262,7 @@ table td.checkout-sum {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: yellow;
+    background-color: #ffff00;
     color: black;
     text-align: center;
     transition: height 1s;
@@ -350,12 +352,14 @@ footer {
         /*flexibel display för att öppna och stänga meny*/
         display: flex;
         align-items: center;
-        padding: 6px;
+        padding: 10px;
         background-color: #7D0A0A;
         cursor: pointer;
         position: absolute;
-        top: 40px;
-        right: 5px;
+        top: 80px;
+        right: 15px;
+        box-shadow: none;
+        border: none;
     }
 
     #open-menu:hover {
@@ -364,12 +368,12 @@ footer {
 
     /*hamburgemenyn*/
     .bars {
-        width: 40px;
-        height: 4px;
+        width: 45px;
+        height: 5px;
         border-radius: 10px;
         display: block;
         background-color: white;
-        margin: 5px 0;
+        margin: 6px 0;
     }
 
     .menu-text {
@@ -382,10 +386,12 @@ footer {
         margin: 2% 2%;
         padding: 10px 15px;
         position: relative;
-        top: 40px;
+        top: 70px;
         right: -240px;
         cursor: pointer;
         background-color: #7D0A0A;
+        box-shadow: none;
+        border: none;
         
       
     }
@@ -433,22 +439,23 @@ footer {
     .center {
         grid-column: 1/2;
         grid-row: 2/3;
+        padding: 0;
     }
     
     .right {
         grid-column: 1/2;
         grid-row: 3/4;
         padding: 0;
-    }
-
-    .center {
-        padding: 10px;
+        margin: 0;
+        height:fit-content;
+        
+       
+    
     }
 
     .produktspec {
         justify-self: center;
         padding: 10px;
-        
     }
 
     /*kassa sidan*/
