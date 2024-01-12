@@ -194,11 +194,10 @@ video {
     max-width: 800px;
 }
 
+/* varukorgen till höger*/
 .right {
     grid-column: 3/4;
-    min-height: 80vh;
     padding: 100px 0 0 0 ;
-
 }
 
 .right ul {
@@ -242,17 +241,12 @@ table td.checkout-sum {
     text-align: right;
 }
 
-
+/*markering i navigeringen vilken sida är aktuell*/
 .activated {
     font-weight: 600;
     font-size: 24px;
     text-decoration: underline;
 }
-
-
-
-
-
 
 /*popup att en produkt blivit tillagd i varukorgen*/
 #notify {
@@ -276,6 +270,7 @@ table td.checkout-sum {
     height: 70px;
 }
 
+/*navigering för liten skärm är dold*/
 #open-menu {
     display: none;
 }
@@ -284,6 +279,7 @@ table td.checkout-sum {
     display: none;
 }
 
+/*footer*/
 footer {
     text-align: center;
     min-height: 100px;
@@ -295,7 +291,6 @@ footer {
     width: 100%;
     grid-column: 1/4;
     display: flex; 
-
 }
 
 .hittaoss {
@@ -309,6 +304,8 @@ footer {
     width: 50%;
     text-align: left;
 }
+
+
 
 
 /* för skärmar mindre är 600 px*/
