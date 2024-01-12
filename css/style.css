@@ -286,18 +286,29 @@ table td.checkout-sum {
 
 footer {
     text-align: center;
-    height: 100px;
+    min-height: 100px;
+    height: fit-content;
     background-color: #7D0A0A;
     color: white;
     font-weight: bold;
     padding-top: 20px;
     width: 100%;
     grid-column: 1/4;
+    display: flex; 
+
 }
 
+.hittaoss {
+    width: 40%;
+    font-weight: 400;
+    text-align: left;
+    padding:  0 0 20px 30px;
+}
 
-
-
+.copyright {
+    width: 50%;
+    text-align: left;
+}
 
 
 /* för skärmar mindre är 600 px*/
