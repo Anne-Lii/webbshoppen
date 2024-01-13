@@ -33,6 +33,8 @@ p {
 
 .center img:hover {
     cursor: pointer;
+    box-shadow: 0 0 10px;
+    background-color: #7D0A0A;
 }
 
 .pricetag {
@@ -500,5 +502,24 @@ footer {
         letter-spacing: 1px;
     }
 
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
 
+    .copyright {
+        grid-row: 1/2;
+        padding: 20px 0 20px 30px;
+    }
+
+    .kontakt_footer {
+        grid-row: 2/3;
+        padding: 20px 0 20px 30px;
+    }
+
+    .hittaoss {
+        grid-row: 3/4;
+        padding: 0 0 50px 30px;
+    }
 }
